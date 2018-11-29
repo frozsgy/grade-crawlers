@@ -2,6 +2,7 @@ import requests
 import re
 import os
 import platform
+import time
 
 #generators for luhn checksum
 def checksum(string):

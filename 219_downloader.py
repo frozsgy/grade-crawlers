@@ -55,8 +55,8 @@ def requestIt(headers,data):
         response=requests.post('http://ma219.math.metu.edu.tr/SIS/sis.php', headers=headers, data=data)
         return response
     except:
-        time.sleep(5000)
         print "Let's sleep a bit, baba yorgun"
+        time.sleep(5)
         requestIt(headers,data)
 
 

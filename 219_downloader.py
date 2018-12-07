@@ -60,7 +60,7 @@ def requestIt(headers,data):
         response=requests.post('http://ma219.math.metu.edu.tr/SIS/sis.php', headers=headers, data=data)
         return response
 
-for i in xrange(200800,250000):
+for i in xrange(170000,250000):
     data={
       'id': luhn(i),
       'Submit': 'Show Info'

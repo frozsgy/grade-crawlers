@@ -6,9 +6,9 @@ $DBName = 'metu_219';
 $link=mysqli_connect($DBHost, $DBUser, $DBPass, $DBName);
 function httpPost($url,$params) {
   $postData = '';
-    foreach($params as $k => $v) {
-      $postData .= $k . '='.$v.'&';
-    }
+  foreach($params as $k => $v) {
+    $postData .= $k . '='.$v.'&';
+  }
   $postData = rtrim($postData, '&');
   $ch = curl_init();
   curl_setopt($ch,CURLOPT_URL,$url);

@@ -1,5 +1,4 @@
 <?php
-$upsveritabani='Veritabani hatasi';
 $DBHost = 'localhost';
 $DBUser = 'root';
 $DBPass = '';

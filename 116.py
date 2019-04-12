@@ -21,7 +21,6 @@ def luhn(iterator):
     return int(id)
 
 #regex search pattern
-# pattern='<tr><td>(.*?)<\/td><td>(.*?)<\/td><td>(.*?)<\/td><td>(.*?)<\/td><td>(.*?)<\/td><td>(.*?)<\/td><td>(.*?)<\/td><td>(.*?)<\/td><td>(.*?)<\/td><td>(.*?)<\/td><td>(.*?)<\/td>'
 
 pattern='<tr><td align="center">Id<\/td><td align="center">Last Name<\/td><td align="center">First Name<\/td><td align="center">MT 1 Score<\/td><td align="center">Midterm 2 Place<\/td><\/tr><tr><td align="center">(.*?)<\/td><td align="center">(.*?)<\/td><td align="center">(.*?)<\/td><td align="center">(.*?)<\/td><td align="center">(.*?)<\/td><\/tr>'
 
@@ -78,5 +77,3 @@ for i in xrange(170000,250000):
         f.write(temp[0]+","+temp[1]+","+temp[2]+","+temp[3]+","+temp[4]+"\n")
 
 print "That's all folks!"
-
-2309920
